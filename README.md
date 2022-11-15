@@ -5,13 +5,14 @@
   #import "RLDownLoadManager.h"
   
 2. 使用 
-  
+ ```Objective-C
+ 
     [[RLDownLoadManager sharedManager] downLoadImageWithURLString:_downloadStrings[downloadIndex] complectionBlock:^(UIImage *image, NSError *error) {
         if (error) {
             NSLog(@"%@",error);
             return ;
-        }
-        
+        } 
         self.imageView.image = image;
         // downloadIndex++;
     }];
+ ```
